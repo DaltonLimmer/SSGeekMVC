@@ -1,0 +1,19 @@
+﻿
+@using SSGeek.Models
+
+@model List<Product>
+
+<div class="container">
+    <h1>Store</h1>
+
+    @foreach (Product p in Model)
+    {
+        <div>
+            <div><img class="productImg" src="~/Content/img/@(p.ImageName)" alt="Alternate Text" /></div>
+            <div>
+                <div><a href="@Url.Action("Detail", "ShoppingCart", new { id = p.ProductId })">@p.Name</a></div>
+                <div>@p.Price</div>
+            </div>
+        </div>
+    }
+</div>

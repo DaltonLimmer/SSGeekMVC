@@ -1,0 +1,8 @@
+﻿@using SSGeek.Models
+
+@model AlienAgeModel
+
+<div class="container">
+    <img class="planetImg" src="~/Content/img/@(Model.Planet.ToLower() + ".jpg")" alt="Alternate Text" />
+    <div>If you are @Model.EarthAge years old on planet Earth, then you're @Calculations.Age(Model.Planet, Model.EarthAge) lbs on @Model.Planet</div>
+</div>

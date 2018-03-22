@@ -1,0 +1,13 @@
+﻿@using SSGeek.Models
+
+@model AlienTravelModel
+
+@{
+    double numberOfTravelYears = Calculations.TravelTime(Model.Planet, Model.TransportMode);
+    double ageAfterTravel = numberOfTravelYears + Model.EarthAge;
+ }
+
+<div class="container">
+    <img class="planetImg" src="~/Content/img/@(Model.Planet.ToLower() + ".jpg")" alt="Alternate Text" />
+    <div>Traveling by @Model.TransportMode you will reach @Model.Planet in @numberOfTravelYears years. You will be @ageAfterTravel years old. </div>
+</div>

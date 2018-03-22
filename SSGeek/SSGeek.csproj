@@ -125,9 +125,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Calculations.cs" />
     <Compile Include="Controllers\CalculatorsController.cs" />
+    <Compile Include="Controllers\ForumController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PlanetsController.cs" />
+    <Compile Include="Controllers\ShoppingCartController.cs" />
     <Compile Include="DAL\ForumPostSqlDAL.cs" />
     <Compile Include="DAL\IForumPostDAL.cs" />
     <Compile Include="DAL\IProductDAL.cs" />
@@ -136,9 +139,15 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AlienAgeModel.cs" />
+    <Compile Include="Models\AlienTravelModel.cs" />
+    <Compile Include="Models\AlienWeightModel.cs" />
+    <Compile Include="Models\BuyItemModel.cs" />
+    <Compile Include="Models\ShoppingCartItem.cs" />
     <Compile Include="Models\ForumPost.cs" />
+    <Compile Include="Models\NewForumPost.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\TriviaModel.cs" />
+    <Compile Include="Models\ShoppingCart.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -146,6 +155,18 @@
     <Content Include="packages.config" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Planets\Index.cshtml" />
+    <Content Include="Views\Calculators\AlienWeight.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Calculators\AlienWeightResult.cshtml" />
+    <Content Include="Views\Calculators\AlienAge.cshtml" />
+    <Content Include="Views\Calculators\AlienAgeResult.cshtml" />
+    <Content Include="Views\Calculators\AlienTravel.cshtml" />
+    <Content Include="Views\Calculators\AlienTravelResult.cshtml" />
+    <Content Include="Views\Forum\ForumPost.cshtml" />
+    <Content Include="Views\Forum\ForumPosts.cshtml" />
+    <Content Include="Views\ShoppingCart\Index.cshtml" />
+    <Content Include="Views\ShoppingCart\ViewCart.cshtml" />
+    <Content Include="Views\ShoppingCart\Detail.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -155,7 +176,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Calculators\" />
     <Folder Include="Views\Home\" />
   </ItemGroup>
   <PropertyGroup>

@@ -163,10 +163,6 @@ input[type=text], input[type=datetime], textarea {
     width: 300px;
 }
 
-th, td {
-    color: white;
-}
-
 table tr:first-child {
     padding-bottom: 10px;
     font-size: 1.1em;
@@ -214,4 +210,40 @@ section.centeredPanel {
     font-size: 16px;
     padding: 10px;
     margin-bottom: 10px;
+}
+
+.container {
+    background-color: white;
+    min-height: 500px;
+    padding: 10px;
+}
+
+.planetImg {
+    width: 150px;
+    float: left;
+    margin-right: 15px;
+}
+
+.post {
+    padding: 10px;
+}
+
+.post:nth-child(odd) {
+    background-color: lightgray;
+}
+
+.subject {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.postInfo {
+    margin-bottom: 10px;
+}
+
+.textCenter {
+    text-align: center;
+}
+.productImg {
+    width:100px;
 }

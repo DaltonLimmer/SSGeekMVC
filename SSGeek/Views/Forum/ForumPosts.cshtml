@@ -1,0 +1,27 @@
+﻿@using SSGeek.Models
+
+@model List<ForumPost>
+
+<div class="container">
+    <div class="textCenter">
+        <h1>Solar System Forum</h1>
+
+        <a href="/Forum/ForumPost">Post a new message</a>
+    </div>
+    @foreach (var post in Model)
+    {
+        <div class="post">
+            <div class="subject">
+                @post.Subject
+            </div>
+            <div class="postInfo">
+                by <span>@post.Username</span> on <span>@post.PostDate</span>
+            </div>
+            <div class="message">
+                @post.Message
+            </div>
+        </div>
+
+    }
+
+</div>

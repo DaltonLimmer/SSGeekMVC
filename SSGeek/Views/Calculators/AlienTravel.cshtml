@@ -1,0 +1,33 @@
+﻿
+<div class="container">
+    <form method="get" action="@Url.Action("AlienTravelResult", "Calculators")">
+        <div>
+            <label>Choose a planet</label>
+            <select name="Planet">
+                <option>Mercury</option>
+                <option>Venus</option>
+                <option>Earth</option>
+                <option>Mars</option>
+                <option>Jupiter</option>
+                <option>Saturn</option>
+                <option>Uranus</option>
+                <option>Neptune</option>
+            </select>
+        </div>
+        <div>
+            <label>Choose a planet</label>
+            <select name="TransportMode">
+                <option>Walking</option>
+                <option>Car</option>
+                <option>Bullet Train</option>
+                <option>Boeing 747</option>
+                <option>Concorde</option>
+            </select>
+        </div>
+        <div>
+            <label>Enter your Earth age</label>
+            <input type="text" name="EarthAge" />
+        </div>
+        <input type="submit" name="Submit" />
+    </form>
+</div>

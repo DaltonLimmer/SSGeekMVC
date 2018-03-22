@@ -16,21 +16,41 @@ namespace SSGeek.Controllers
         // - create a new action to process the form submission (e.g. AlienAgeResult, AlienWeightResult, etc.)
         // - create a view that displays the submitted form result
 
-        // GET: Calculators/AlienAge
+        //// GET: Calculators/AlienAge
         public ActionResult AlienAge()
-        {            
+        {
             return View("AlienAge");
         }
 
         public ActionResult AlienAgeResult(AlienAgeModel model)
-        {            
+        {
             return View("AlienAgeResult", model);
         }
-        
-        //TODO: Create an AlienWeight and AlienWeightResult Action
-        //TODO: Create an AlienTravel and AlienTravelResult Action
 
-        
+        //TODO: Create an AlienWeight and AlienWeightResult Action
+        public ActionResult AlienWeight()
+        {
+            return View("AlienWeight");
+        }
+
+        public ActionResult AlienWeightResult(AlienWeightModel model)
+        {
+            return View("AlienWeightResult", model);
+        }
+
+        ////TODO: Create an AlienTravel and AlienTravelResult Action
+
+        public ActionResult AlienTravel()
+        {
+            return View("AlienTravel");
+        }
+
+        public ActionResult AlienTravelResult(AlienTravelModel model)
+        {
+            return View("AlienTravelResult", model);
+        }
+
+
 
         private List<SelectListItem> transportationModes = new List<SelectListItem>()
         {

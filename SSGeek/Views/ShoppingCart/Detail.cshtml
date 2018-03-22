@@ -1,0 +1,22 @@
+﻿@using SSGeek.Models
+@model Product
+
+<div class="container">
+    <h1>Solar System Gift Shop</h1>
+    <div>
+        <div><img src="~/Content/img/@Model.ImageName" alt="Alternate Text" /></div>
+        <div>
+            <div>@Model.Name</div>
+            <div>@Model.Price.ToString("C")</div>
+            <div>@Model.Description</div>
+            <div>
+                <form action="/ShoppingCart/Detail" method="post">
+                    <label>Quantity to buy</label>
+                    <input type="text" name="Quantity" />
+                    <input type="hidden" name="ProductId" value="@Model.ProductId" />
+                    <input type="submit" value="Add to cart" />
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

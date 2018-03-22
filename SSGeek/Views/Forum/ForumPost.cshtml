@@ -1,0 +1,21 @@
+﻿
+<div class="container">
+    <h1>New Post</h1>
+    <form method="post" action="@Url.Action("ForumPost", "Forum")">
+        <div>
+            <label>Username</label>
+            <input type="text" name="Username" />
+        </div>
+        <div>
+            <label>Subject</label>
+            <input type="text" name="Subject" />
+        </div>
+        <div>
+            <label>Message</label>
+            <textarea name="Message"></textarea>
+        </div>
+
+
+        <input type="submit" name="Submit" />
+    </form>
+</div>

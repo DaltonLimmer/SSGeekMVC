@@ -1,0 +1,8 @@
+﻿@using SSGeek.Models
+
+@model AlienWeightModel
+
+<div class="container">
+    <img class="planetImg" src="~/Content/img/@(Model.Planets.ToLower() + ".jpg")" alt="Alternate Text" />
+    <div>If you are @Model.EarthWeight lbs on Earth, you would weigh @Calculations.Weight(Model.Planets, Model.EarthWeight) lbs on @Model.Planets</div>
+</div>

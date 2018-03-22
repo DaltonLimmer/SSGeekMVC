@@ -1,0 +1,30 @@
+﻿
+@using SSGeek.Models
+@model ShoppingCart
+
+<div class="container">
+    <h1>View Cart</h1>
+
+    <table>
+        <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Qty.</th>
+            <th>Total</th>
+        </tr>
+    
+    @foreach(ShoppingCartItem item in Model.Items)
+    {
+        <tr>
+            <td><img class="productImg" src="~/Content/img/@item.Product.ImageName" alt="Alternate Text" /></td>
+            <td>@item.Product.Name</td>
+            <td>@item.Product.Price</td>
+            <td>@item.Quantity</td>
+            <td>@((item.Quantity * item.Product.Price).ToString("C"))</td>
+        </tr>
+    }
+    </table>
+
+    <div>Grand Total: @Model.GetTotalCost().ToString("C")</div>
+</div>
