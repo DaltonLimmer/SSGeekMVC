@@ -1,0 +1,20 @@
+﻿@using SSGeek.Controllers
+
+    @{
+        string cssClass = "";
+        if (TempData[ForumController.SUCCESS_MESSAGE_TYPE_KEY] != null)
+        {
+            MessageType type = (MessageType)TempData[ForumController.SUCCESS_MESSAGE_TYPE_KEY];
+
+            if (type == MessageType.Error)
+            {
+                cssClass = "danger";
+            }
+            else
+            {
+                cssClass = type.ToString().ToLower();
+            }
+        }
+    }
+
+<div class="@cssClass-message">@TempData[ForumController.SUCCESS_MESSAGE_KEY]</div>

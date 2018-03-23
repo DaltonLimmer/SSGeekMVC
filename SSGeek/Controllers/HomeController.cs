@@ -13,5 +13,7 @@ namespace SSGeek.Controllers
         {
             return RedirectToAction("Index", "Planets"); //<-- if user goes to .com/ this redirects to .com/planets/index
         }
+
+
     }
 }

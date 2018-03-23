@@ -167,6 +167,7 @@
     <Content Include="Views\ShoppingCart\Index.cshtml" />
     <Content Include="Views\ShoppingCart\ViewCart.cshtml" />
     <Content Include="Views\ShoppingCart\Detail.cshtml" />
+    <Content Include="Views\Shared\ForumPostMessage.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

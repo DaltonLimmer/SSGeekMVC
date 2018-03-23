@@ -5,7 +5,7 @@
 <div class="container">
     <div class="textCenter">
         <h1>Solar System Forum</h1>
-
+        @Html.Partial("ForumPostMessage")
         <a href="/Forum/ForumPost">Post a new message</a>
     </div>
     @foreach (var post in Model)

@@ -203,14 +203,14 @@ section.centeredPanel {
     margin: 0 auto;
 }
 
-.success-message {
+/*.success-message {
     background-color: #5CB85C;
     text-align: center !important;
     color: #FFF !important;
     font-size: 16px;
     padding: 10px;
     margin-bottom: 10px;
-}
+}*/
 
 .container {
     background-color: white;
@@ -246,4 +246,16 @@ section.centeredPanel {
 }
 .productImg {
     width:100px;
+}
+
+
+.success-message {
+    background-color: #dff0d8;
+    color: #3c763d;
+    border: 1px solid #d6e9c6;
+    border-radius: 4px;
+    width: 54%;
+    font-size: .75rem;
+    margin: 0px auto 15px;
+    padding: 5px;
 }
