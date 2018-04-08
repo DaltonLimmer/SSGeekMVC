@@ -1,0 +1,29 @@
+﻿@using FormsWithHttpPost.Models
+@model List<Review>
+<link href="~/Content/style.css" rel="stylesheet" />
+<div class="container">
+    <div style="text-align: center">
+        <img style="width: 17%" src="~/Content/forDummies.png" />
+
+        <br />
+        <a href="~/Home/SubmitReview">Submit a new post</a>
+        <br />
+        <h2>Past Reviews</h2>
+    </div>
+    <br />
+        @foreach (Review review in Model)
+        {
+
+            <div class="review">
+                    <strong>@review.Title</strong>
+                    @for (int i = 0; i < review.Rating; i++)
+                    {
+                        <img style="width: 1.5%" src="/Content/star.png" />
+                    }
+                <div class="sizeTwelveFont">by @review.Username on @review.ReviewDate</div>
+                <div class="messagePadding sizeTwelveFont">@review.Message</div>
+            </div>
+
+        }
+
+</div>

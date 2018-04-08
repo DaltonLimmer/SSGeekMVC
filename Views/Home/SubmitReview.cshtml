@@ -1,0 +1,35 @@
+﻿<link href="~/Content/style.css" rel="stylesheet" />
+
+<div class="container">
+    <h2>New Book Review</h2>
+    <form method="post" action="@Url.Action("SubmitReview", "Home")">
+        <table>
+            <tr>
+                <td>Enter username: </td>
+                <td><input type="text" name="Username" /></td>
+            </tr>
+            <tr>
+                <td>How many stars? </td>
+                <td>
+                    <select name="Rating">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Provide a title: </td>
+                <td><input type="text" name="Title" /></td>
+            </tr>
+            <tr>
+                <td>Review: </td>
+                <td><textarea name="Message"></textarea></td>
+            </tr>
+        </table>
+        <input type="submit" name="Submit" />
+    </form>
+</div>
